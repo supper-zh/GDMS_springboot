@@ -24,7 +24,7 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
+
 public interface ITeacherDao {
 	@Insert("insert into t_teacher values(null,#{teacherNo},#{teacherName},#{departmentId},#{sex},#{inputMan},#{lastModifyTime},#{phone},#{email},#{zhicheng})")
 	int addTeacher(Teacher teacher);

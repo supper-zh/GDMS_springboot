@@ -1,7 +1,9 @@
 package com.example.entity;
 
-// 不使用
+import org.springframework.stereotype.Component;
 
+// 不使用
+@Component
 public class StudentProgress {
 	private int id;
 	private int progressId;

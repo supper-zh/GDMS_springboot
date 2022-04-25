@@ -22,7 +22,6 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
 public interface IStudentDao {
 
 	@Select("select * from t_student where id=#{id}")

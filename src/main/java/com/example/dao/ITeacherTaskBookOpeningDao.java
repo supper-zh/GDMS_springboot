@@ -25,8 +25,7 @@ import java.util.List;
  * 
  *
  */
-@Mapper
-@Repository
+
 public interface ITeacherTaskBookOpeningDao {
 	@Select("select * from t_teacher_opening_report_task_book where thesisTitleId=#{thesisTitleId}")
 	TeacherTaskBookOpening showInfo(int thesisTitleId);

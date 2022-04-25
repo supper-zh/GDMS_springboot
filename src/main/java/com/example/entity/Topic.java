@@ -1,7 +1,9 @@
 package com.example.entity;
 
-import java.util.Date;
+import org.springframework.stereotype.Component;
 
+import java.util.Date;
+@Component
 public class Topic {
 	private int id;
 	private int thesisId;

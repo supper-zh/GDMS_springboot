@@ -1,7 +1,35 @@
 #datasource
 spring:
+  mvc: #配置jsp模板，标注当前jsp页面的位置
+    view:  #页面
+      prefix: /WEB-INF/jsp/ #标注jsp页面的位置
+  #    suffix: .jsp  #/这样就可以访问根目录下的webapp中的jsp，以后更新完jsp后不需要重启App了。这里不需要
   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_graduation_management?serverTimezone=UTC
     username: root
     password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+#配置mybatis
+#mybatis:
+#  mapper-locations: classpath:com/example/dao  #这里有问题！！！删了反而可运行了
+#  type-aliases-package: com.example.entity
+#
+
+server:
+  port: 8080
+  servlet:
+    context-path: /sys   #配置web访问路径,指定项目名  访问首页方式: localhost:8080/sys/index.jsp
+    jsp:
+      init-parameters:
+        development: true  #开启jsp模板开发模式
+
+
+#配置日志使用
+logging:
+  level:
+    root: info
+    com.example: debug  #指定包日志

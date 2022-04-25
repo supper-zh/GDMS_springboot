@@ -22,7 +22,6 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
 public interface IThesisTitleDao {
 @Insert("insert into t_thesis_title values(null,#{thesisName},#{teacherId},#{submitTime},1,#{inputMan},#{nandu},#{liang},#{from},#{leixing},#{description})")
 	int addThesisTitle(ThesisTitle thesisTitle);

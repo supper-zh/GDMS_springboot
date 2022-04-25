@@ -1,5 +1,8 @@
 package com.example.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class TeacherTaskBookOpening {
 	private int id;
 	private int teacherId;

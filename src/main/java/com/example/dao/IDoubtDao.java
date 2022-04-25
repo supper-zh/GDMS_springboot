@@ -17,7 +17,6 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
 public interface IDoubtDao {
 
 	@Insert("insert into t_doubt values(null,#{studentId},#{studentDoubt},#{answer})")

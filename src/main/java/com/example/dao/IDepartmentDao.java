@@ -18,7 +18,6 @@ import java.util.List;
  * 
  */
 @Mapper
-@Repository
 public interface IDepartmentDao {
 
 	@Select("select * from t_department")

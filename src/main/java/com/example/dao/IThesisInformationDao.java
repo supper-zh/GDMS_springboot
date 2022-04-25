@@ -17,7 +17,7 @@ import org.springframework.stereotype.Repository;
  *
  */
 @Mapper
-@Repository
+
 public interface IThesisInformationDao {
 	@Insert("insert into t_thesis_information values(null,#{studentId},#{thesisText},0,#{description});")
 	int addThesisInformation(ThesisInformation thesisInformation);

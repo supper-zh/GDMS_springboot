@@ -19,7 +19,6 @@ import org.springframework.stereotype.Repository;
  *
  */
 @Mapper
-@Repository
 public interface IUserDao {
 	@Select("select * from t_user where id=#{id}")
 	User queryById(int id);

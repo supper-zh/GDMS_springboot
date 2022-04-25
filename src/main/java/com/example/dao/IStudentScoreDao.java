@@ -18,7 +18,7 @@ import org.springframework.stereotype.Repository;
  *
  */
 @Mapper
-@Repository
+
 public interface IStudentScoreDao {
 	@Insert("insert into t_student_score values(null,#{studentId},#{thesisResult},#{inputMan})")
 	int addStudenScore(StudentScore score);

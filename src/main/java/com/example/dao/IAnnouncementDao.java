@@ -19,7 +19,6 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
 public interface IAnnouncementDao {
 	@Insert("insert into t_announcement values(null,#{context},#{inputMan},#{lastModifyTime})")
 	int addAnnouncement(@Param("announcement") Announcement announcement);

@@ -20,7 +20,6 @@ import java.util.List;
  * 
  */
 @Mapper
-@Repository
 public interface ITopicDao {
 	@Select("select * from t_topic")
 	List<Topic> showAllTopic();

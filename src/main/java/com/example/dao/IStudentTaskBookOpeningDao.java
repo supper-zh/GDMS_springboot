@@ -24,7 +24,6 @@ import java.util.Map;
  *
  */
 @Mapper
-@Repository
 public interface IStudentTaskBookOpeningDao {
 	@Select("select * from t_student_opening_report_task_book where studentId=#{studentId}")
 	StudentTaskBookOpening showInfoByStudentId(int studentId);

@@ -18,7 +18,6 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
 public interface IThesisPaperDao {
 	@Insert("insert into t_thesis_paper values(null,#{studentId},#{paperInfo})")
 	int addThesisPaper(ThesisPaper paper);

@@ -22,7 +22,7 @@ import java.util.List;
  *
  */
 @Mapper
-@Repository
+
 public interface ITeacherProgressDao {
 	@Insert("insert into t_teacher_progress_notification values (null,#{context},#{inputMan},#{inputTime},#{studentId},#{teacherId},0)")
 	int addTeacherProgress(TeacherProgress teacherProgress);

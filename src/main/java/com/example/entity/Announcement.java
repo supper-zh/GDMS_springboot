@@ -1,7 +1,11 @@
 package com.example.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
+
+@Component
 public class Announcement {
 	private int id;
 	private String context;

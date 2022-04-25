@@ -19,7 +19,6 @@ import java.util.List;
  * 
  */
 @Mapper
-@Repository
 public interface IMajorDao {
 	@Select("select * from t_major")
 	List<Major> getAllMajor();

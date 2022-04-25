@@ -21,7 +21,6 @@ import java.util.Map;
  * 
  */
 @Mapper
-@Repository
 public interface IZhiyuanDao {
 	@Select("select * from t_zhiyuan join t_student on t_zhiyuan.studentId=t_student.id join t_thesis_title on t_zhiyuan.thesisId=t_thesis_title.id  where teacherId=#{teacherId}")
 	List<Map> showAllZhiyuan(int teacherId);
